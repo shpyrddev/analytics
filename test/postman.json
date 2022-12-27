@@ -1,0 +1,88 @@
+{
+	"info": {
+		"_postman_id": "3d1ef621-b86a-4e7c-a835-bf39d95a3321",
+		"name": "Shipyard Analytics",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "push-event",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": " */*",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": " application/json",
+						"type": "text"
+					},
+					{
+						"key": "User-Agent",
+						"value": " GitHub-Hookshot/2179efe",
+						"type": "text"
+					},
+					{
+						"key": "X-GitHub-Delivery",
+						"value": " 3f90a360-8166-11ed-93dd-e93d75fcf431",
+						"type": "text"
+					},
+					{
+						"key": "X-GitHub-Event",
+						"value": " push",
+						"type": "text"
+					},
+					{
+						"key": "X-GitHub-Hook-ID",
+						"value": " 393503965",
+						"type": "text"
+					},
+					{
+						"key": "X-GitHub-Hook-Installation-Target-ID",
+						"value": " 68096501",
+						"type": "text"
+					},
+					{
+						"key": "X-GitHub-Hook-Installation-Target-Type",
+						"value": " organization",
+						"type": "text"
+					},
+					{
+						"key": "X-Hub-Signature",
+						"value": " sha1=0dad6e23e71828c7bfc2da538651964c2de248a9",
+						"type": "text"
+					},
+					{
+						"key": "X-Hub-Signature-256",
+						"value": " sha256=926dc2d65619c3aac560bf6a3e083e354e9fcd605e24ffab5e41759e8b0a2d64",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"ref\": \"refs/heads/2-open\",\n    \"before\": \"20cbc569ca5cda61c05ed256169fce7ac9c2dc4d\",\n    \"after\": \"acfa03658f84ad823aa0834eecca30f23eebf438\",\n    \"repository\": {\n        \"id\": 580915529,\n        \"node_id\": \"R_kgDOIqARSQ\",\n        \"name\": \"exp\",\n        \"full_name\": \"shpyrddev/exp\",\n        \"private\": true,\n        \"owner\": {\n            \"name\": \"shpyrddev\",\n            \"email\": \"info@shpyrd.dev\",\n            \"login\": \"shpyrddev\",\n            \"id\": 68096501,\n            \"node_id\": \"MDEyOk9yZ2FuaXphdGlvbjY4MDk2NTAx\",\n            \"avatar_url\": \"https://avatars.githubusercontent.com/u/68096501?v=4\",\n            \"gravatar_id\": \"\",\n            \"url\": \"https://api.github.com/users/shpyrddev\",\n            \"html_url\": \"https://github.com/shpyrddev\",\n            \"followers_url\": \"https://api.github.com/users/shpyrddev/followers\",\n            \"following_url\": \"https://api.github.com/users/shpyrddev/following{/other_user}\",\n            \"gists_url\": \"https://api.github.com/users/shpyrddev/gists{/gist_id}\",\n            \"starred_url\": \"https://api.github.com/users/shpyrddev/starred{/owner}{/repo}\",\n            \"subscriptions_url\": \"https://api.github.com/users/shpyrddev/subscriptions\",\n            \"organizations_url\": \"https://api.github.com/users/shpyrddev/orgs\",\n            \"repos_url\": \"https://api.github.com/users/shpyrddev/repos\",\n            \"events_url\": \"https://api.github.com/users/shpyrddev/events{/privacy}\",\n            \"received_events_url\": \"https://api.github.com/users/shpyrddev/received_events\",\n            \"type\": \"Organization\",\n            \"site_admin\": false\n        },\n        \"html_url\": \"https://github.com/shpyrddev/exp\",\n        \"description\": null,\n        \"fork\": false,\n        \"url\": \"https://github.com/shpyrddev/exp\",\n        \"forks_url\": \"https://api.github.com/repos/shpyrddev/exp/forks\",\n        \"keys_url\": \"https://api.github.com/repos/shpyrddev/exp/keys{/key_id}\",\n        \"collaborators_url\": \"https://api.github.com/repos/shpyrddev/exp/collaborators{/collaborator}\",\n        \"teams_url\": \"https://api.github.com/repos/shpyrddev/exp/teams\",\n        \"hooks_url\": \"https://api.github.com/repos/shpyrddev/exp/hooks\",\n        \"issue_events_url\": \"https://api.github.com/repos/shpyrddev/exp/issues/events{/number}\",\n        \"events_url\": \"https://api.github.com/repos/shpyrddev/exp/events\",\n        \"assignees_url\": \"https://api.github.com/repos/shpyrddev/exp/assignees{/user}\",\n        \"branches_url\": \"https://api.github.com/repos/shpyrddev/exp/branches{/branch}\",\n        \"tags_url\": \"https://api.github.com/repos/shpyrddev/exp/tags\",\n        \"blobs_url\": \"https://api.github.com/repos/shpyrddev/exp/git/blobs{/sha}\",\n        \"git_tags_url\": \"https://api.github.com/repos/shpyrddev/exp/git/tags{/sha}\",\n        \"git_refs_url\": \"https://api.github.com/repos/shpyrddev/exp/git/refs{/sha}\",\n        \"trees_url\": \"https://api.github.com/repos/shpyrddev/exp/git/trees{/sha}\",\n        \"statuses_url\": \"https://api.github.com/repos/shpyrddev/exp/statuses/{sha}\",\n        \"languages_url\": \"https://api.github.com/repos/shpyrddev/exp/languages\",\n        \"stargazers_url\": \"https://api.github.com/repos/shpyrddev/exp/stargazers\",\n        \"contributors_url\": \"https://api.github.com/repos/shpyrddev/exp/contributors\",\n        \"subscribers_url\": \"https://api.github.com/repos/shpyrddev/exp/subscribers\",\n        \"subscription_url\": \"https://api.github.com/repos/shpyrddev/exp/subscription\",\n        \"commits_url\": \"https://api.github.com/repos/shpyrddev/exp/commits{/sha}\",\n        \"git_commits_url\": \"https://api.github.com/repos/shpyrddev/exp/git/commits{/sha}\",\n        \"comments_url\": \"https://api.github.com/repos/shpyrddev/exp/comments{/number}\",\n        \"issue_comment_url\": \"https://api.github.com/repos/shpyrddev/exp/issues/comments{/number}\",\n        \"contents_url\": \"https://api.github.com/repos/shpyrddev/exp/contents/{+path}\",\n        \"compare_url\": \"https://api.github.com/repos/shpyrddev/exp/compare/{base}...{head}\",\n        \"merges_url\": \"https://api.github.com/repos/shpyrddev/exp/merges\",\n        \"archive_url\": \"https://api.github.com/repos/shpyrddev/exp/{archive_format}{/ref}\",\n        \"downloads_url\": \"https://api.github.com/repos/shpyrddev/exp/downloads\",\n        \"issues_url\": \"https://api.github.com/repos/shpyrddev/exp/issues{/number}\",\n        \"pulls_url\": \"https://api.github.com/repos/shpyrddev/exp/pulls{/number}\",\n        \"milestones_url\": \"https://api.github.com/repos/shpyrddev/exp/milestones{/number}\",\n        \"notifications_url\": \"https://api.github.com/repos/shpyrddev/exp/notifications{?since,all,participating}\",\n        \"labels_url\": \"https://api.github.com/repos/shpyrddev/exp/labels{/name}\",\n        \"releases_url\": \"https://api.github.com/repos/shpyrddev/exp/releases{/id}\",\n        \"deployments_url\": \"https://api.github.com/repos/shpyrddev/exp/deployments\",\n        \"created_at\": 1671650992,\n        \"updated_at\": \"2022-12-21T19:29:52Z\",\n        \"pushed_at\": 1671651166,\n        \"git_url\": \"git://github.com/shpyrddev/exp.git\",\n        \"ssh_url\": \"git@github.com:shpyrddev/exp.git\",\n        \"clone_url\": \"https://github.com/shpyrddev/exp.git\",\n        \"svn_url\": \"https://github.com/shpyrddev/exp\",\n        \"homepage\": null,\n        \"size\": 0,\n        \"stargazers_count\": 0,\n        \"watchers_count\": 0,\n        \"language\": null,\n        \"has_issues\": true,\n        \"has_projects\": true,\n        \"has_downloads\": true,\n        \"has_wiki\": true,\n        \"has_pages\": false,\n        \"has_discussions\": false,\n        \"forks_count\": 0,\n        \"mirror_url\": null,\n        \"archived\": false,\n        \"disabled\": false,\n        \"open_issues_count\": 1,\n        \"license\": null,\n        \"allow_forking\": false,\n        \"is_template\": false,\n        \"web_commit_signoff_required\": false,\n        \"topics\": [],\n        \"visibility\": \"private\",\n        \"forks\": 0,\n        \"open_issues\": 1,\n        \"watchers\": 0,\n        \"default_branch\": \"trunk\",\n        \"stargazers\": 0,\n        \"master_branch\": \"trunk\",\n        \"organization\": \"shpyrddev\"\n    },\n    \"pusher\": {\n        \"name\": \"deedubs\",\n        \"email\": \"me@deedubs.com\"\n    },\n    \"organization\": {\n        \"login\": \"shpyrddev\",\n        \"id\": 68096501,\n        \"node_id\": \"MDEyOk9yZ2FuaXphdGlvbjY4MDk2NTAx\",\n        \"url\": \"https://api.github.com/orgs/shpyrddev\",\n        \"repos_url\": \"https://api.github.com/orgs/shpyrddev/repos\",\n        \"events_url\": \"https://api.github.com/orgs/shpyrddev/events\",\n        \"hooks_url\": \"https://api.github.com/orgs/shpyrddev/hooks\",\n        \"issues_url\": \"https://api.github.com/orgs/shpyrddev/issues\",\n        \"members_url\": \"https://api.github.com/orgs/shpyrddev/members{/member}\",\n        \"public_members_url\": \"https://api.github.com/orgs/shpyrddev/public_members{/member}\",\n        \"avatar_url\": \"https://avatars.githubusercontent.com/u/68096501?v=4\",\n        \"description\": \"Streamlining Software Delivery\"\n    },\n    \"sender\": {\n        \"login\": \"deedubs\",\n        \"id\": 10067,\n        \"node_id\": \"MDQ6VXNlcjEwMDY3\",\n        \"avatar_url\": \"https://avatars.githubusercontent.com/u/10067?v=4\",\n        \"gravatar_id\": \"\",\n        \"url\": \"https://api.github.com/users/deedubs\",\n        \"html_url\": \"https://github.com/deedubs\",\n        \"followers_url\": \"https://api.github.com/users/deedubs/followers\",\n        \"following_url\": \"https://api.github.com/users/deedubs/following{/other_user}\",\n        \"gists_url\": \"https://api.github.com/users/deedubs/gists{/gist_id}\",\n        \"starred_url\": \"https://api.github.com/users/deedubs/starred{/owner}{/repo}\",\n        \"subscriptions_url\": \"https://api.github.com/users/deedubs/subscriptions\",\n        \"organizations_url\": \"https://api.github.com/users/deedubs/orgs\",\n        \"repos_url\": \"https://api.github.com/users/deedubs/repos\",\n        \"events_url\": \"https://api.github.com/users/deedubs/events{/privacy}\",\n        \"received_events_url\": \"https://api.github.com/users/deedubs/received_events\",\n        \"type\": \"User\",\n        \"site_admin\": false\n    },\n    \"created\": false,\n    \"deleted\": false,\n    \"forced\": false,\n    \"base_ref\": null,\n    \"compare\": \"https://github.com/shpyrddev/exp/compare/20cbc569ca5c...acfa03658f84\",\n    \"commits\": [\n        {\n            \"id\": \"acfa03658f84ad823aa0834eecca30f23eebf438\",\n            \"tree_id\": \"4a266da3c6b7641add4bdc48873ff1a0b329e979\",\n            \"distinct\": true,\n            \"message\": \"Update README.md\",\n            \"timestamp\": \"2022-12-21T14:32:46-05:00\",\n            \"url\": \"https://github.com/shpyrddev/exp/commit/acfa03658f84ad823aa0834eecca30f23eebf438\",\n            \"author\": {\n                \"name\": \"Dan Williams\",\n                \"email\": \"me@deedubs.com\",\n                \"username\": \"deedubs\"\n            },\n            \"committer\": {\n                \"name\": \"GitHub\",\n                \"email\": \"noreply@github.com\",\n                \"username\": \"web-flow\"\n            },\n            \"added\": [],\n            \"removed\": [],\n            \"modified\": [\n                \"README.md\"\n            ]\n        }\n    ],\n    \"head_commit\": {\n        \"id\": \"acfa03658f84ad823aa0834eecca30f23eebf438\",\n        \"tree_id\": \"4a266da3c6b7641add4bdc48873ff1a0b329e979\",\n        \"distinct\": true,\n        \"message\": \"Update README.md\",\n        \"timestamp\": \"2022-12-21T14:32:46-05:00\",\n        \"url\": \"https://github.com/shpyrddev/exp/commit/acfa03658f84ad823aa0834eecca30f23eebf438\",\n        \"author\": {\n            \"name\": \"Dan Williams\",\n            \"email\": \"me@deedubs.com\",\n            \"username\": \"deedubs\"\n        },\n        \"committer\": {\n            \"name\": \"GitHub\",\n            \"email\": \"noreply@github.com\",\n            \"username\": \"web-flow\"\n        },\n        \"added\": [],\n        \"removed\": [],\n        \"modified\": [\n            \"README.md\"\n        ]\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/github",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"github"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
