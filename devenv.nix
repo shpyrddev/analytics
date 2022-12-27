@@ -1,26 +1,17 @@
 { pkgs, ... }:
 
 {
-  # https://devenv.sh/basics/
-  env.GREET = "devenv";
 
   # https://devenv.sh/packages/
-  packages = [ pkgs.git pkgs.clickhouse ];
+  packages = [ pkgs.git pkgs.clickhouse pkgs.ngrok ];
 
   enterShell = ''
-    hello
-    git --version
+    go install github.com/cosmtrek/air@latest
+    go install -tags 'clickhouse' github.com/golang-migrate/migrate/v4/cmd/migrate@latest
   '';
 
   # https://devenv.sh/languages/
   languages.go.enable = true;
 
-  # https://devenv.sh/scripts/
-  scripts.hello.exec = "echo hello from $GREET";
-
-  # https://devenv.sh/pre-commit-hooks/
-  pre-commit.hooks.shellcheck.enable = true;
-
-  # https://devenv.sh/processes/
-  # processes.ping.exec = "ping example.com";
+  processes.clickhouse.exec = "mkdir -p .devenv/state/clickhouse && cd .devenv/state/clickhouse && clickhouse server start";
 }
